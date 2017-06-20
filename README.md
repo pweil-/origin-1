@@ -36,7 +36,7 @@ OpenShift Application Platform
 
 For questions or feedback, reach us on [IRC on #openshift-dev](https://botbot.me/freenode/openshift-dev/) on Freenode or post to our [mailing list](https://lists.openshift.redhat.com/openshiftmm/listinfo/dev).
 
-Getting Started
+Getting Tested
 ---------------
 
 ### Installation
