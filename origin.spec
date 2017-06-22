@@ -49,7 +49,7 @@
 %global product_name Origin
 %endif
 
-Name:           %{package_name}
+Name:           origin
 # Version is not kept up to date and is intended to be set by tito custom
 # builders provided in the .tito/lib directory of this project
 Version:        0.0.1
