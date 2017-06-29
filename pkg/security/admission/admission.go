@@ -156,3 +156,8 @@ func logProviders(pod *kapi.Pod, providers []scc.SecurityContextConstraintsProvi
 		glog.V(4).Infof("provider creation error: %v", err)
 	}
 }
+
+// doNothing does nothing.  It won't return an error.
+func doNothing() error {
+	return nil
+}
