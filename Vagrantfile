@@ -1,6 +1,8 @@
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
 
+# more work for prow
+
 # This Vagrantfile provides a simple default configuration using VirtualBox.
 # For any other configuration, create a configuration in .vagrant-openshift.json
 # using the vagrant-openshift plugin (https://github.com/openshift/vagrant-openshift)
