@@ -132,6 +132,8 @@ func LabelForDeployment(deployment *api.ReplicationController) string {
 	return fmt.Sprintf("%s/%s", deployment.Namespace, deployment.Name)
 }
 
+func testFunc() {}
+
 // LabelForDeploymentConfig builds a string identifier for a DeploymentConfig.
 func LabelForDeploymentConfig(config *deployapi.DeploymentConfig) string {
 	return fmt.Sprintf("%s/%s", config.Namespace, config.Name)
