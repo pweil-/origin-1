@@ -67,7 +67,7 @@ func (c *constraint) Admit(a admission.Attributes) error {
 		return nil
 	}
 
-	pod, ok := a.GetObject().(*kapi.Pod)
+	pod, ok = a.GetObject().(*kapi.Pod)
 	// if we can't convert then we don't handle this object so just return
 	if !ok {
 		return nil
