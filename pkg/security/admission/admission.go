@@ -121,6 +121,7 @@ func (c *constraint) Admit(a admission.Attributes) error {
 		return nil
 	}
 
+	// TODO: this error message is difficult to parse from a user perspective.  Improve this.
 	// we didn't validate against any security context constraint provider, reject the pod and give the errors for each attempt
 	glog.V(4).Infof("unable to validate pod %s (generate: %s) against any security context constraint: %v", pod.Name, pod.GenerateName, validationErrs)
 	return admission.NewForbidden(a, fmt.Errorf("unable to validate against any security context constraint: %v", validationErrs))
