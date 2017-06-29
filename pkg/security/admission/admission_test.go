@@ -30,7 +30,7 @@ func NewTestAdmission(lister kcorelisters.SecurityContextConstraintsLister, kcli
 }
 
 func TestAdmitCaps(t *testing.T) {
-	createPodWithCaps := func(caps *kapi.Capabilities) *kapi.Pod {
+	createPodWithCaps = func(caps *kapi.Capabilities) *kapi.Pod {
 		pod := goodPod()
 		pod.Spec.Containers[0].SecurityContext.Capabilities = caps
 		return pod
