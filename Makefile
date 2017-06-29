@@ -11,6 +11,7 @@
 OUT_DIR = _output
 OS_OUTPUT_GOPATH ?= 1
 
+export SOME_ENV
 export GOFLAGS
 export TESTFLAGS
 # If set to 1, create an isolated GOPATH inside _output using symlinks to avoid
